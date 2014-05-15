@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+        <title>test</title>
+        <script type="text/javascript" src="BSpline.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <h1>BSpline Curve Playground</h1>
+        Click the canvas below to add points.
+        <form name="fm">
+            BSpline degree:
+            <select name="degree" onchange="redraw();">
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            &nbsp;
+            <input type="button" onClick="ptsClear();" value="Clear All Points">
+        </form>
+        <canvas id="canvas1" width="700" height="400" style="border: solid 5px;"></canvas><br>
+        source is available at <a href="https://github.com/Tagussan/BSpline">https://github.com/Tagussan/BSpline</a>
+    </body>
+</html>
