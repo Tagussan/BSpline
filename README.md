@@ -24,4 +24,5 @@ Example:
     }
     
 Demo is available [here](http://tagussan.rdy.jp/singleProjects/BSpline/ "Demo")
+
 For more information, please visit [here](http://tagussan.rdy.jp/blog/archives/445 "Blog")
