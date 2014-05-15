@@ -9,18 +9,18 @@ var BSpline = function(points,degree,copy){
     }
     this.degree = degree;
     this.dimension = points[0].length;
-    if(degree == 2){ //degree must be 2,3,4 or 5
+    if(degree == 2){
         this.baseFunc = this.basisDeg2;
-        this.baseFuncRangeInt = 2;//1.5->2
+        this.baseFuncRangeInt = 2;
     }else if(degree == 3){
         this.baseFunc = this.basisDeg3;
-        this.baseFuncRangeInt = 2;//2->2
+        this.baseFuncRangeInt = 2;
     }else if(degree == 4){
         this.baseFunc = this.basisDeg4;
-        this.baseFuncRangeInt = 3;//2.5->3
+        this.baseFuncRangeInt = 3;
     }else if(degree == 5){
         this.baseFunc = this.basisDeg5;
-        this.baseFuncRangeInt = 3;//3->3
+        this.baseFuncRangeInt = 3;
     } 
 };
 
